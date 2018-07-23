@@ -5,8 +5,10 @@
 	background: url("../img/gmap.png");
 	background-size: cover;
 }
-.slide.three {
-  background color: rgba(99,217,104,1);
+.slide.three .content {
+	background-color: rgba(99,217,104,1);
+ 	padding: 1% 3% 3% 3%;
+}
 .slide.four {
 	background-color: #FFF;
 }
