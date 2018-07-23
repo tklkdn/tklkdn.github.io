@@ -1,0 +1,62 @@
+.slide.one {
+	background-color: #63d668;
+}
+.slide.two {
+	background: url("../img/GMAP.png");
+	background-size: cover;
+}
+.slide.three .content {
+	background-color: rgba(99,217,104,1); 
+	padding: 1% 3% 3% 3%;
+}
+.slide.four {
+	background-color: #FFF;
+}
+.slide.five {
+	background-color: #63d668;
+}
+.slide.six {
+	background-color: #000;
+}
+.slide.seven {
+	background: url("../img/gmdma.png");
+	background-size: cover;
+}
+.slide.eight .content {
+	background-color: rgba(99,217,104,1); 
+	padding: 1% 3% 3% 3%;
+}
+.slide.nine {
+	background-color: #FFF;
+}
+.slide.ten {
+	background-color: #FFF;
+}
+.slide.eleven {
+	background-color: #FFF;
+}
+.slide.twelve {
+	background-color: #FFF;
+}
+.slide.thirteen {
+	background-color: #63d668;
+}
+.slide.fourteen {
+	background-color: #FFF;
+}
+.slide.fifteen {
+	background-color: #63d668;
+}
+.slide.sixteen {
+	background: url("../img/Traffic_in_Socal.jpg");
+	background-size: cover;
+}
+.slide.seventeen .content {
+	background-color: rgba(99,217,104,1); 
+	padding: 1% 3% 3% 3%;
+}
+.slide.seventeen img {
+	display: block;
+	width: 8vh;
+	margin: 6% 0 1%;
+}

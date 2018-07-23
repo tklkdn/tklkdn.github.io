@@ -1,0 +1,155 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Taka Kodani</title>
+  <meta name="description" content="Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/traffic.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+  <div id="intro">
+    <div class="content">
+	  <h1>Measuring Traffic with Google Maps API</h1>
+	  <p>Spring 2017</p>
+    </div>
+  </div>
+  <div id="main" class="main-container">
+    <section class="slide one">
+	  <div class="content">
+	    <h1>Introduction</h1>
+	    <p>Poor commute is a common experience in large cities<br><br>As drivers we want to understand the general flow of traffic<br><br>But traffic sensor data is inaccessible to the public<br><br>Is there a simple way to analyze and discover traffic patterns by ourselves?</p>
+	  </div>
+	</section>
+	<section class="slide two">
+	  <div class="content">
+	  </div>
+	</section>
+    <section class="slide three">
+	  <div class="content">
+		<h1>Idea #1: Google Maps</h1>
+	    <p>Step 1: Open map of Austin in browser<br><br>Step 2: Take a screenshot at set intervals using auto screenshot capture + auto refresh applications<br><br>Step 3: Count the number of green, orange, red, and maroon pixels using Python script<br><br>Step 4: Generate a traffic score</p>
+	  </div>
+	</section>
+	<section class="slide four">
+	  <div class="content">
+	    <h1>But...</h1>
+	  </div>
+	</section>
+	<section class="slide five">
+	  <div class="content">
+		<h1>Issues</h1>
+		<p>Cannot use PC while running setup<br><br>Saving images and processing them one by one are inefficient<br><br>Inconsistencies syncing up all applications<br><br>Manual setup sometimes leads to human error</p>
+	  </div>
+	</section>
+	<section class="slide six">
+	  <div class="content">
+	    <h1 style="color: white;">Idea #2</h1>
+	  </div>
+	</section>
+	<section class="slide seven">
+	  <div class="content">
+	    <h1></h1>
+		<p></p>
+	  </div>
+	</section>
+	<section class="slide eight">
+	  <div class="content">
+		<h1>Google Maps Distance Matrix API</h1>
+		<p>Automatically collect travel time from various routes<br><br>Easy setup: Set timer, start script, let it run in the background, data is written in csv file (instead of as large png files)<br><br>Convert time into traffic severity score<br><br>Aggregate scores</p>
+	  </div>
+	</section>
+	<section class="slide nine">
+	  <div class="content">
+	    <h1>Results</h1>
+	  </div>
+	</section>
+	<section class="slide ten">
+	  <div class="content">
+	    <img src="img/image1.png"></img>
+	  </div>
+	</section>
+	<section class="slide eleven">
+	  <div class="content">
+	    <img src="img/image2.png"></img>
+	  </div>
+	</section>
+	<section class="slide twelve">
+	  <div class="content">
+	    <img src="img/image3.png"></img>
+	  </div>
+	</section>
+	<section class="slide thirteen">
+	  <div class="content">
+	    <h1>Austin Traffic Score App</h1>
+		<p>Simple web app is created to display general traffic patterns in Austin, divided by main regions<br><br>Uses Google Maps API + collected historical data to "predict" future traffic severity of a region<br><br>For personal use: See traffic severity of own commute routes
+	  </div>
+	</section>
+	<section class="slide fourteen">
+		<div class="content">
+			<img src="img/app.gif"></img>
+		</div>
+	</section>
+	<section class="slide fifteen">
+		<div class="content">
+			<h1>Limitations</h1>
+			<p>Data needs to be validated with actual sensor data<br><br>Route selection and region mapping bias<br><br>Only two weeks' worth of data collected</p>
+		</div>
+	</section>
+	<section class="slide sixteen">
+		<div class="content">
+		</div>
+	</section>
+	<section class="slide seventeen">
+		<div class="content">
+			<h1>Conclusion</h1>
+			<p>Potential for method to be used in future traffic studies<br><br>Google Maps API: Inexpensive, accessible, and scalable<br><br>Useful on personal level: Data can inform user on traffic patterns within own commute</p>
+			<a href="pdfs/PIFinalReport.pdf" target="_blank"><img src="img/pdf-file.png"></img></a>
+		</div>
+	</section>
+  </div>
+  <div class="footer">
+	<h1 id="topbar">Back to top</h1>
+  </div>
+  
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  
+  <script src="js/main.js"></script> 
+  <script src="js/traffic.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!--
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  -->
+</body>
+
+</html>

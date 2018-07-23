@@ -1,55 +1,96 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>Taka Kodani</title>
-		<link href="favicon.ico" rel="icon" type="image/x-icon" />
-		<link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="animations.css">
-		<link rel="stylesheet" href="styles.css">
-		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-	</head>
-	<body>
-		<a href="http://www.google.com" class="textAnim" id="T">T</a>
-		<a href="http://www.google.com" class="textAnim" id="A1">A</a>
-		<a href="http://www.google.com" class="textAnim" id="K">K</a>
-		<a href="http://www.google.com" class="textAnim" id="A2">A</a>
-		<div class="line"></div>
-		<script>
-			$('.textAnim').mouseenter(function() {
-				$(this).addClass("floating");
-			});
-			$('.textAnim').mouseleave(function() {
-				$(this).removeClass("floating");
-			});
+<!doctype html>
+<html class="no-js" lang="en">
 
-			function createRect() {
-				var x = Math.floor(Math.random() * (90 + 1));
-				var y = Math.floor(Math.random() * (60 - 25 + 1) + 25);
-				var width = Math.floor((Math.random() * (250 - 200 + 1)) + 200);
-				var height = Math.floor((Math.random() * (200 - 150 + 1)) + 150);
-				var r = Math.floor(Math.random() * (255 + 1));
-				var g = Math.floor(Math.random() * (255 + 1));
-				var b = Math.floor(Math.random() * (255 + 1));
-				var rgba = "rgba(" + r + "," + g + "," + b + "," + "0.4)";
-				var rect = "width:" + width + "px;height:" + height + "px;background-color:" + rgba + ";position:absolute;top:" + y + "%;left:" + x + "%; z-index:-1;";
-				return rect;
-			}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Taka Kodani</title>
+  <meta name="description" content="Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-			function appendRect() {
-				$("body").append('<div class="box fadeIn" style=' + createRect() +'></div>');
-			};
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
 
-			var newBox;
-			$('.textAnim').mouseenter(function() {
-				newBox = setInterval("appendRect()",500);
-			});
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="link-hover.css">
+</head>
 
-			$('.textAnim').mouseleave(function() {
-				clearInterval(newBox);
-				$(".box").remove();
-			});
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
 
-		</script>
-	</body>
+  <!-- Add your site or application content here -->
+  <div class="header"></div>
+  <div class="sidenav">
+    <a href="#" id="link-1"><img src="img/face.png"></img></a>
+    <a href="#" id="link-2"><img src="img/processor.png"></img></a>
+    <a href="traffic.html" id="link-3"><img src="img/traffic-light.png"></img></a>
+    <a href="#" id="link-4"><img src="img/house.png"></img></a>
+    <a href="#" id="link-5"><img src="img/microphone.png"></img></a>
+    <a href="refuge.html" id="link-6"><img src="img/charity.png"></img></a>
+  </div>
+  <div class="white-bkgd">
+    <div class="content">
+    </div>
+  </div>
+  <div class="bg-1">
+    <div class="content">
+      <h1>Taka Kodani</h1>
+      <p>Some years ago I accidentally did UX at work without knowing what UX was and now here I am  doing UX purposefully. But that's not all–I also do some UI design, coding, and business automation.</p>
+    </div>
+  </div>
+  <div class="bg-2">
+    <div class="content">
+      <h1>Tokyo Electron</h1>
+      <p>Working as a Business Systems Analyst since December of 2016, I have provided SharePoint support, developed automated workflows, forms, and intranet sites, and managed the (re)build of complex business systems. Here are some of my projects.</p>
+    </div>
+  </div>
+  <div class="bg-3">
+    <div class="content">
+      <h1>Traffic</h1>
+	  <p>Applications like Google Maps and Waze have improved our facility to navigate traffic and be forewarned of any unexpected congestions. And the question came to us, can we somehow use this data to quantify traffic and then use the quantified information to identify traffic patterns? And can we apply these patterns to our own commuter lives?</p>
+    </div>
+  </div>
+  <div class="bg-4">
+    <div class="content">
+      <h1>Brownie</h1>
+	  <p>Brownie is a concept for a smart home application for senior citizens. By surrounding them with an integrated system that monitors many of their household, health, and security needs, senior citizens who live on their own can be assured of greater independence in their own homes, thereby reducing their need for caretaker support.</p>
+    </div>
+  </div>
+  <div class="bg-5">
+    <div class="content">
+      <h1>StoryUs</h1>
+	  <p>StoryUs is a concept for families to share multimedia stories to other family members. Combining aspects of geneology, social media, and storytelling into one platform, the mobile app we designed allows users to tell their stories to, and listen to stories from, current family members, as well as to pass them down for generations to come.</p>
+    </div>
+  </div>
+  <div class="bg-6">
+    <div class="content">
+      <h1>The Refuge</h1>
+	  <p>A nonprofit organization depends on donations. And a website serves as its digital face–the more satisfying the experience, the more it can generate donations. With this in mind, I conducted a heuristic analysis and usability test for the Refuge to gauge UX metrics.</p>
+    </div>
+  </div>
+  
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!--
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  -->
+</body>
+
 </html>
