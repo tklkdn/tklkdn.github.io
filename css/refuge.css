@@ -37,6 +37,10 @@
 	background-color: rgba(214,70,85,1);
 	padding: 1% 3% 3% 3%;
 }
+.slide.seven img {
+	display: block;
+	width: 8vh;
+}
 .slide.eight {
 	background-color: #d64655;
 }
