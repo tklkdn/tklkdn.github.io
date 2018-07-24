@@ -1,0 +1,62 @@
+section {
+	height: 100vh;
+	text-align: center;	
+}
+section .content {
+	margin-top: -2%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 60%;
+}
+section p {
+	text-align: justify;
+}
+.white {
+	background-color: white;
+	color: black;
+}
+.white p {
+	color: gray;
+}
+.black {
+	background-color: black;
+	color: white;
+}
+#boulder {
+	background: url("../img/cu_boulder.jpg");
+	background-size: cover;
+}
+#boulder .content {
+	background-color: rgba(0,0,0,.5);
+	padding: 3% 5% 5% 5%;
+}
+#boulder h1,
+#boulder p {
+	color: white;
+}
+#red-rocks {
+	background: url("../img/red_rocks.jpg");
+	background-size: cover;
+}
+#red-rocks .content {
+	background-color: rgba(0,0,0,.5);
+	padding: 3% 5% 5% 5%;
+}
+#red-rocks h1,
+#red-rocks p {
+	color: white;
+}
+#austin {
+	background: url("../img/ut_tower.jpg");
+	background-size: cover;
+}
+#austin .content {
+	background-color: rgba(0,0,0,.5);
+	padding: 3% 5% 5% 5%;
+}
+#austin h1,
+#austin p {
+	color: white;
+}
