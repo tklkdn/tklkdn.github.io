@@ -32,6 +32,12 @@
 .slide.ten {
 	background-color: #FFF;
 }
+.slide.ten img,
+.slide.eleven img,
+.slide.twelve img,
+.slide.fourteen img {
+	width: 100%;
+}
 .slide.eleven {
 	background-color: #FFF;
 }
