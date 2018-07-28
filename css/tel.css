@@ -1,0 +1,45 @@
+.slide {
+	text-align: justify;
+}
+.slide.one {
+	background-color: #00a9e0;
+}
+.slide.two {
+	background-color: #fff;
+}
+.slide.two p {
+	color: gray;
+}
+.slide.three {
+	background-color: #00a9e0;
+}
+.slide.four{
+	background-color: #fff;
+}
+.slide.four p {
+	color: gray;
+}
+.slide.five {
+	background-color: #00a9e0;
+}
+.slide.six {
+	background-color: #fff;
+}
+.slide.six img {
+	height: 80vh;
+}
+.slide.seven {
+	background-color: #00a9e0;
+}
+.slide.eight {
+	background-color: #fff;
+}
+.slide.eight img {
+	height: 80vh;
+}
+.slide.nine {
+	background-color: #fff;
+}
+.slide.nine img {
+	height: 80vh;
+}

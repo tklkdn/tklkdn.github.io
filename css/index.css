@@ -20,14 +20,11 @@ h1 {
 }
 p {
   text-align: right;
-  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: calc(12px + 1.5vw);
   color: white;
   overflow: auto;
   padding-top: 20px;
-}
-a {
-  outline: 0;
 }
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;

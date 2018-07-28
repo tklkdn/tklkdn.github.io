@@ -111,7 +111,7 @@ h1 {
 }
 p,
 li {
-	font-family: 'Merriweather', serif;
+	font-family: 'Merriweather', sans-serif;
 	font-size: 3vh;
 }
 #intro {
@@ -164,6 +164,9 @@ li {
 	margin: 0 auto;
 	width: 300px;
 	max-width: 66%;
+}
+a {
+  outline: 0;
 }
 
 /* ==========================================================================

@@ -1,0 +1,111 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Taka Kodani</title>
+  <meta name="description" content="Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/tel.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+  <div id="intro">
+    <div class="content">
+	  <h1>Tokyo Electron</h1>
+	  <p>December 2016 - Present</p>
+    </div>
+  </div>
+  <div id="main" class="main-container">
+    <section class="slide one">
+      <div class="content">
+	    <p>Tokyo Electron's U.S. subsidiaries have a large number of SharePoint-based systems that make use of forms and automated workflows. They are built on Microsoft's legacy platforms, InfoPath and SharePoint Designer, respectively. Because Microsoft plans to drop support for the former in several years, the company has had a need to rebuild these systems using different products. Largely, Nintex is the main tool the IT department has opted to use to convert existing forms and workflows.</p>
+      </div>
+    </section>
+    <section class="slide two">
+      <div class="content">
+	    <p>When I first began this job, I knew almost nothing about SharePoint and Nintex, much less InfoPath and SharePoint Designer, but learned quickly by studying existing solutions. Within a few months I took part in building small forms and workflows myself. This involved working with stakeholders to make sure I understood the business process and that I was able to meet their needs and, if possible, their wants.</p>
+	  </div>
+    </section>
+    <section class="slide three">
+      <div class="content">
+        <p>The DPAL Request conversion project was the first large system upgrade I undertook. Although both the request form and the workflows that accompanied the approval process were complicated, I only had to work with one contact person, and all he wanted was a nearly exact replacement. Because he did not ask me to change how the form was structured or functioned and how the workflow operated, challenges I faced were "only" technical in nature.</p>
+	  </div>
+    </section>
+    <section class="slide four">
+      <div class="content">
+        <p>InfoPath and SharePoint Designer are different products from Nintex Forms and Workflow. There are obviously going to be differences in terms of what you can and cannot do, and there was never less than several instances where I did not encounter some technical roadblock due to these differences while working on any large-scale conversion project. Sometimes you have to create workarounds, but depending on the nature of these workarounds, they can either improve or complicate the system. In the latter's case, sometimes the best option was to take a step back and see if any changes could be made on the business side, rather than to implement the workarounds.</p>
+      </div>
+    </section>
+	<section class="slide five">
+	  <div class="content">
+	    <p><br>We focused on the form first.<br><br>
+		<b>Tabs.</b> Creating a tabular section was difficult, due to the fact that tabs, while technically supported, are a far cry from being well supported by Nintex. With research and persistence, I was able to re-create the tabular section the way it was first built in InfoPath, which does in fact support tabs well.<br><br>
+		<b>Complex calculations.</b> I had to use calculations both in the form controls and in form variables, and any lack of attention to detail would have caused the form to output the wrong numbers.<br><br>
+		<b>External data connections.</b> The previous version of the form had a direct connection to a SQL database--it was pulling data to display up-to-date parts information. This can be done with Nintex as well but requires inserting a stored procedure in the database. We worked with the Business Intelligence team to accomplish this.</p>
+	  </div>
+	</section>
+	<section class="slide six">
+	  <div class="content">
+	    <a href="img/dpal-form.png"><img src="img/dpal-form.png"></img></a>
+      </div>
+	</section>
+	<section class="slide seven">
+	  <div class="content">
+	    <p>Then came the workflows. The entire approval process was split into two workflows due to the size, and how the way the approvals worked suited having two different workflows better. The first workflow was fairly straightforward, but the second one posed some problems. A request was approved based on which business units were chosen in the request form, but Nintex does not support dynamic approvers. What I ultimately went with was to wrap approval actions in a parallel task action, with each business unit having its own "Run if" condition.</p>
+	  </div>
+	</section>
+	<section class="slide eight">
+	  <div class="content">
+	    <a href="img/dpal-wf-1.png"><img src="img/dpal-wf-1.png"></img></a>
+	  </div>
+	</section>
+	<section class="slide nine">
+	  <div class="content">
+	    <a href="img/dpal-wf-2.png"><img src="img/dpal-wf-2.png"></img></a>
+	  </div>
+	</section>
+	
+  </div>
+  
+  
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  
+  <script type="text/javascript" src="js/greensock/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+  <script type="text/javascript" src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+  
+  <script src="js/main.js"></script>
+  <script src="js/tel.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!--
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  -->
+</body>
+
+</html>
