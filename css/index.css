@@ -20,7 +20,7 @@ h1 {
 }
 p {
   text-align: right;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Merriweather, sans-serif;
   font-size: calc(12px + 1.5vw);
   color: white;
   overflow: auto;

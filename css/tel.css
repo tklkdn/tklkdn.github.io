@@ -1,45 +1,50 @@
-.slide {
+h1 {
+	text-align: center;
+}
+p,
+li {
+	font-family: Lato, serif;
+	font-size: 2.5vh;
 	text-align: justify;
 }
-.slide.one {
+img {
+	display: block;
+	margin: 5% auto;
+	width: 33%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 16px 0 rgba(0, 0, 0, 0.19);
+}
+.hvr-grow {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.blue {
 	background-color: #00a9e0;
+	color: #fff;
 }
-.slide.two {
+.blue .content {
+	padding: 5% 30%;
+}
+.white {
 	background-color: #fff;
-}
-.slide.two p {
 	color: gray;
 }
-.slide.three {
-	background-color: #00a9e0;
+.white .content {
+	padding: 5% 30%;
 }
-.slide.four{
-	background-color: #fff;
+#left {
+	display: inline-block;
+	margin: 5%;
 }
-.slide.four p {
-	color: gray;
-}
-.slide.five {
-	background-color: #00a9e0;
-}
-.slide.six {
-	background-color: #fff;
-}
-.slide.six img {
-	height: 80vh;
-}
-.slide.seven {
-	background-color: #00a9e0;
-}
-.slide.eight {
-	background-color: #fff;
-}
-.slide.eight img {
-	height: 80vh;
-}
-.slide.nine {
-	background-color: #fff;
-}
-.slide.nine img {
-	height: 80vh;
+#right {
+	display: inline-block;
+	margin: 5%;
 }
