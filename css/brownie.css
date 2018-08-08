@@ -1,0 +1,29 @@
+.slide.one {
+	background-color: #9125c6;
+}
+.slide.two {
+	background: url("../img/home.jpeg");
+	background-size: cover;
+}
+.slide.two .content {
+	background-color: rgba(145,37,198,0.8);
+	padding: 1% 3% 3% 3%;
+}
+.slide.three {
+	background-color: #9125c6;
+}
+.slide.four {
+	background-color: #fff;
+}
+.slide.four .content p {
+	color: gray;
+}
+.slide.five {
+	background-color: #9125c6;
+}
+.slide.six {
+	background-color: #fff;
+}
+.slide.six .content p {
+	color: gray;
+}

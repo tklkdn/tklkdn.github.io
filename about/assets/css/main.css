@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("font-awesome.min.css");
 
+@font-face {
+	font-family: 'ADAM.CG PRO';
+	src: url("../../../fonts/ADAM.CG PRO.otf") format("opentype");
+}
+
 /*
 	Big Picture by HTML5 UP
 	html5up.net | @ajlkn
@@ -500,12 +505,16 @@ input, select, textarea {
 /* Type */
 
 	body, input, textarea, select {
-		font-family: "Source Sans Pro", "sans-serif";
+		font-family: Lato, "sans-serif";
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
 		color: #39454b;
 		letter-spacing: 0.025em;
+	}
+	
+	h2 {
+		font-family: 'ADAM.CG PRO', san-serif;
 	}
 
 		@media screen and (max-width: 1920px) {
