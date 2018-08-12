@@ -40,14 +40,8 @@
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
-.purple-bkgd {
+.slide.one {
 	background-color: #9125c6;
-}
-.white-bkgd {
-	background-color: white;
-}
-.white-bkgd .content p {
-	color: gray;
 }
 .slide.two {
 	background: url("../img/home.jpeg");
@@ -56,6 +50,18 @@
 .slide.two .content {
 	background-color: rgba(145,37,198,0.8);
 	padding: 1% 3% 3% 3%;
+}
+.slide.three {
+	background-color: #9125c6;
+}
+.slide.four {
+	background-color: #fff;
+}
+.slide.four .content p {
+	color: gray;
+}
+.slide.five {
+	background-color: #9125c6;
 }
 .slide.six {
 	background: url("../img/interview.png");
@@ -68,6 +74,9 @@
 .slide.six .content p {
 	color: gray;
 }
+.slide.seven {
+	background-color: #9125c6;
+}
 .slide.eight {
 	background-color: #ffffff;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23e9d3f4' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23d3a8e8' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23bd7cdd' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23a751d1' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%239125c6' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
@@ -78,9 +87,21 @@
 .slide.eight .content p {
 	color: black;
 }
+.slide.nine {
+	background-color: #fff;
+}
 .slide.nine img {
 	width: 100%;
 	margin-bottom: 3%;
+}
+.slide.nine .content p {
+	color: gray;
+}
+.slide.ten {
+	background-color: #9125c6;
+}
+.slide.eleven {
+	background-color: #fff;
 }
 .slide.eleven img {
 	display: block;
@@ -89,6 +110,30 @@
 	margin-bottom: 3%;
 	margin-left: auto;
 	margin-right: auto;
+}
+.slide.eleven .content p {
+	color: gray;
+}
+.slide.twelve {
+	background-color: #9125c6;
+}
+.slide.thirteen {
+	background-color: #fff;
+}
+.slide.thirteen .content p{
+	color: gray;
+}
+.slide.fourteen {
+	background-color: #9125c6;
+}
+.slide.fifteen {
+	background-color: #fff;
+}
+.slide.fifteen .content p {
+	color: grey;
+}
+.slide.sixteen {
+	background-color: #9125c6;
 }
 #left {
 	display: inline-block;
