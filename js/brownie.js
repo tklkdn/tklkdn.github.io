@@ -7,7 +7,16 @@ $(document).ready(function(){
 		.fromTo(".slide.four", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone})
 		.fromTo(".slide.five", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
 		.fromTo(".slide.six", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})
-
+		.fromTo(".slide.seven", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.eight", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.nine", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.ten", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.eleven", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.twelve", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.thirteen", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.fourteen", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.fifteen", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.sixteen", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone})
 		
 	new ScrollMagic.Scene({
 		triggerElement: "#main",
@@ -17,4 +26,14 @@ $(document).ready(function(){
 		.setPin("#main")
 		.setTween(wipeAnimation)
 		.addTo(controller);
+});
+
+var $root = $('html, body');
+
+$('a[href^="#"]').click(function () {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+
+    return false;
 });

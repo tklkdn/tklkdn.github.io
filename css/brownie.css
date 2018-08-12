@@ -1,5 +1,53 @@
-.slide.one {
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+.purple-bkgd {
 	background-color: #9125c6;
+}
+.white-bkgd {
+	background-color: white;
+}
+.white-bkgd .content p {
+	color: gray;
 }
 .slide.two {
 	background: url("../img/home.jpeg");
@@ -9,21 +57,73 @@
 	background-color: rgba(145,37,198,0.8);
 	padding: 1% 3% 3% 3%;
 }
-.slide.three {
-	background-color: #9125c6;
-}
-.slide.four {
-	background-color: #fff;
-}
-.slide.four .content p {
-	color: gray;
-}
-.slide.five {
-	background-color: #9125c6;
-}
 .slide.six {
-	background-color: #fff;
+	background: url("../img/interview.png");
+	background-size: cover;
+}
+.slide.six .content {
+	background-color: rgba(255,255,255,0.8);
+	padding: 1% 3% 3%;
 }
 .slide.six .content p {
 	color: gray;
+}
+.slide.eight {
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23e9d3f4' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23d3a8e8' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23bd7cdd' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23a751d1' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%239125c6' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	/* background by SVGBackgrounds.com */
+}
+.slide.eight .content p {
+	color: black;
+}
+.slide.nine img {
+	width: 100%;
+	margin-bottom: 3%;
+}
+.slide.eleven img {
+	display: block;
+	width: 50%;
+	max-width: 100%;
+	margin-bottom: 3%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#left {
+	display: inline-block;
+	float: left;
+	width: 40%;
+	text-align: center;
+	background-color: white;
+	padding: 3%;
+	border-radius: 40px 10px 10px;
+}
+#left img,
+#right img {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-bottom: 5%; 
+	max-width: 100%; 
+	height: auto;
+	border-radius: 40px 10px 0px 0px;
+}
+#left p {
+	color: gray;
+	font-size: 2vh;
+}
+#right {
+	display: inline-block;
+	float: right;
+	width: 40%;
+	text-align: center;
+	background-color: white;
+	color: gray;
+	padding: 3%;
+	border-radius: 40px 10px 10px;
+}
+#right p {
+	color: gray;
+	font-size: 2vh;
 }
