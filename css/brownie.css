@@ -132,6 +132,9 @@
 .slide.fifteen .content p {
 	color: grey;
 }
+.slide.fifteen img {
+	width: 100%;
+}
 .slide.sixteen {
 	background-color: #9125c6;
 }

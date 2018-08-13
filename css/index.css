@@ -16,7 +16,7 @@ h1 {
 p {
   text-align: right;
   font-family: Lato, sans-serif;
-  font-size: calc(12px + 1.5vw);
+  font-size: calc(12px + 1vw);
   color: white;
   overflow: auto;
   padding-top: 20px;

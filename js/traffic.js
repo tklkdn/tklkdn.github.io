@@ -22,7 +22,7 @@ $(document).ready(function(){
 	new ScrollMagic.Scene({
 		triggerElement: "#main",
 		triggerHook: "onLeave",
-		duration: "300%"
+		duration: "500%"
 	})
 		.setPin("#main")
 		.setTween(wipeAnimation)
