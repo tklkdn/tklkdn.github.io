@@ -17,6 +17,10 @@ $(document).ready(function(){
 		.fromTo(".slide.fourteen", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})
 		.fromTo(".slide.fifteen", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
 		.fromTo(".slide.sixteen", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.seventeen", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.eighteen", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.nineteen", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.twenty", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
 		
 	new ScrollMagic.Scene({
 		triggerElement: "#main",

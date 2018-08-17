@@ -138,6 +138,42 @@
 .slide.sixteen {
 	background-color: #9125c6;
 }
+.slide.seventeen {
+	background-color: #fff;
+}
+.slide.seventeen .content p {
+	color: grey;
+}
+.slide.eighteen {
+	background-color: #9125c6;
+}
+.slide.nineteen {
+	background-color: #fff;
+}
+.slide.nineteen img {
+	width: 100%;
+}
+.slide.twenty {
+	background-color: #9125c6;
+}
+.center {
+	display: block;
+	width: 50%;
+	background-color: white;
+	padding: 3%;
+	border-radius: 10px 40px 10px 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+}
+.center img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+	border-radius: 0px 40px 0px 0px;
+}
 #left {
 	display: inline-block;
 	float: left;
