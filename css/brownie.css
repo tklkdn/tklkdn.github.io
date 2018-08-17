@@ -162,6 +162,9 @@
 .slide.twenty-one .content p {
 	color: gray;
 }
+.slide.twenty-two {
+	background-color: #9125c6;
+}
 .center {
 	display: block;
 	width: 50%;
@@ -216,4 +219,91 @@
 #right p {
 	color: gray;
 	font-size: 2vh;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  overflow: hidden;
+  font-family: Lato, sans-serif;
+}
+table td, table th {
+  border-top: 1px solid #ECF0F1;
+  padding: 10px;
+}
+table td {
+  border-left: 1px solid #ECF0F1;
+  border-right: 1px solid #ECF0F1;
+}
+table th {
+  background-color: #9125c6;
+  color: white;
+}
+table tr:nth-of-type(even) td {
+  background-color: #cba8dd;
+}
+
+.mobile-header {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  p {
+    display: block;
+    font-weight: bold;
+  }
+
+  table tr td:not(:first-child), table tr th:not(:first-child), table tr td:not(.total-val) {
+    display: none;
+  }
+  table tr:nth-of-type(even) td:first-child {
+    background-color: #cba8dd;
+  }
+  table tr:nth-of-type(odd) td:first-child {
+    background-color: white;
+  }
+  table tr:nth-of-type(even) td:not(:first-child) {
+    background-color: white;
+  }
+  table tr th:first-child {
+    width: 100%;
+    display: block;
+  }
+  table tr th:not(:first-child) {
+    width: 40%;
+    transition: transform 0.4s ease-out;
+    transform: translateY(-9999px);
+    position: relative;
+    z-index: -1;
+  }
+  table tr td:not(:first-child) {
+    transition: transform 0.4s ease-out;
+    transform: translateY(-9999px);
+    width: 60%;
+    position: relative;
+    z-index: -1;
+  }
+  table tr td:first-child {
+    display: block;
+    cursor: pointer;
+  }
+  table tr.total th {
+    width: 25%;
+    display: inline-block;
+  }
+  table tr td.total-val {
+    display: inline-block;
+    transform: translateY(0);
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  table tr th:not(:first-child) {
+    width: 50%;
+    font-size: 14px;
+  }
+  table tr td:not(:first-child) {
+    width: 50%;
+    font-size: 14px;
+  }
 }
