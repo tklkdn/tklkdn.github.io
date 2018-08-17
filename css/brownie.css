@@ -156,6 +156,12 @@
 .slide.twenty {
 	background-color: #9125c6;
 }
+.slide.twenty-one {
+	background-color: #fff;
+}
+.slide.twenty-one .content p {
+	color: gray;
+}
 .center {
 	display: block;
 	width: 50%;

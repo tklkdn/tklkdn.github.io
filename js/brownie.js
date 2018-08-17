@@ -20,7 +20,8 @@ $(document).ready(function(){
 		.fromTo(".slide.seventeen", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
 		.fromTo(".slide.eighteen", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})
 		.fromTo(".slide.nineteen", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
-		.fromTo(".slide.twenty", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.twenty", 1, {y: "-100%"}, {y: "0%", ease: Linear.easeNone})
+		.fromTo(".slide.twenty-one", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})
 		
 	new ScrollMagic.Scene({
 		triggerElement: "#main",
