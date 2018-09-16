@@ -4,6 +4,7 @@ $(".bg-3").hide();
 $(".bg-4").hide();
 $(".bg-5").hide();
 $(".bg-6").hide();
+$(".bg-7").hide();
 $(".bg-white").hide();
 
 $("#link-1").mouseenter(function() {
@@ -46,4 +47,11 @@ $("#link-6").mouseenter(function() {
 });
 $("#link-6").mouseleave(function() {
     $(".bg-6").fadeOut(1000);
+});
+
+$("#link-7").mouseenter(function() {
+    $(".bg-7").fadeIn(1000);
+});
+$("#link-7").mouseleave(function() {
+    $(".bg-7").fadeOut(1000);
 });

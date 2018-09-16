@@ -77,13 +77,17 @@ img {
 #link-6 {
   background-color: #d64655;
 }
+#link-7 {
+  background-color: #99866D;
+}
 .white-bkgd,
 .bg-1,
 .bg-2,
 .bg-3,
 .bg-4,
 .bg-5,
-.bg-6 {
+.bg-6,
+.bg-7 {
   position: fixed;
   top: 0;
   left: 0;
@@ -114,7 +118,9 @@ img {
 .bg-6 {
   background-color: #d64655;
 }
-
+.bg-7 {
+  background-color: #99866D;
+}
 
 @media only screen and (max-width: 600px) {
   .content {
