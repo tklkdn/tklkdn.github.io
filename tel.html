@@ -37,7 +37,7 @@
     <section class="blue">
       <div class="content">
 		<h1>Background</h1>
-		<p>Tokyo Electron has a large number of business forms and automated workflows built on Microsoft's legacy platforms, InfoPath and SharePoint Designer. Because Microsoft plans to drop support for the former in several years, there is a need to rebuild all SharePoint-based systems with a different set of products. Largely, Nintex has been the main tool the IT department has opted to use to convert and update existing forms and workflows.</p>
+		<p>Tokyo Electron has a large number of business forms and automated workflows built on Microsoft's legacy platforms, InfoPath and SharePoint Designer. Because Microsoft plans to drop support for the former in several years, there is a need to rebuild all SharePoint-based systems with a different set of products. Largely, Nintex we have opted to use to convert and update existing forms and workflows.</p>
 		<p>When I first began this job I knew almost nothing about SharePoint and Nintex, much less InfoPath and SharePoint Designer, but learned quickly by studying existing solutions. Within a few months I took part in (re)building small forms and workflows myself. This involved working with stakeholders to make sure I understood the business process and that I was able to meet their needs.</p>
       </div>
     </section>
@@ -47,10 +47,10 @@
 		<p>The DPAL Request conversion project was the first large system upgrade I undertook. Although both the request form and the workflows that accompanied the approval process were complicated, having to work with one contact person made things easier for me. Because he did not ask me to change how the form was structured or functioned and how the workflow operated, challenges I faced were "only" technical in nature.</p>
 		<p>Here's an example to illustrate what I mean: The fact that InfoPath and SharePoint Designer are different products from Nintex Forms and Workflow yields its own set of challenges. There are obviously going to be differences in terms of what you can and cannot do, and there was never less than a few instances where I did not encounter some roadblock due to these differences while working on any large-scale conversion project. Sometimes you have to create workarounds, but depending on the nature of these workarounds, they can either improve or further complicate the system.</p>
 		<a href="img/dpal-form.png"><img class="hvr-grow" src="img/dpal-form.png"></img></a>
-		<p>We focused on the form first. Three things I want to point about it:</p>
+		<p>We focused on the form first. Three things I want to point out about it:</p>
 		<ul>
-			<li><b>Tabs.</b> Creating a tabular section was difficult, due to the fact that tabs, while technically supported, are a far cry from being well supported by Nintex. With research and persistence, I was able to re-create the tabular section the way it was first built in InfoPath, which does in fact support tabs well.</li>
-			<li><b>Complex calculations.</b> I had to use calculations both in the form controls and in form variables, and any lack of attention to detail would have caused the form to output the wrong numbers.</li>
+			<li><b>Tabs.</b> Creating a tabular section was difficult, due to the fact that tabs, while technically supported, are a far cry from being well supported by Nintex. Eventually I was able to re-create the tabular section the way it was first built in InfoPath.</li>
+			<li><b>Complex calculations.</b> I had to use calculations both in the form controls and in form variables, and lack of attention to detail would have caused the form to output the wrong numbers.</li>
 			<li><b>External data connections.</b> The previous version of the form had a direct connection to a SQL database&#x2014;it was pulling data to display up-to-date parts information. This can be done with Nintex as well but requires inserting a stored procedure in the database. We worked with the Business Intelligence team to accomplish this.</li>
 		</ul>
 		<div style="text-align: center;">
@@ -64,11 +64,11 @@
 	<section class="blue">
 	  <div class="content">
 	    <h1>SEM Work Sign-Up</h1>
-		<p>Upgrading the SEM work sign-up system was one of the earliest projects I was assigned to work on. SEM is an electron microscope TEL uses to view and take photographs of wafer samples. Engineers and technicians need to take turns using the SEM machines. The sign-up system serves the purposes of a) allowing engineers to request a technican to photograph their samples; b) keeping track of who is in line to use them; and c) storing records of every work (to be later analyzed for reporting).</p>
+		<p>Upgrading the SEM work sign-up system was one of the earliest projects I was assigned to work on. SEM is an electron microscope used to view and take photographs of wafer samples. Engineers and technicians need to take turns using the SEM machines. The sign-up system serves the purposes of a) allowing engineers to request a technican to photograph their samples; b) keeping track of who is in line to use them; and c) storing records of every work (to be later analyzed for reporting).</p>
 		<p>The form and workflows had already been converted to Nintex not too long ago, but the manager of the department requested that I add in the capability of allowing technicians to log in time-in and time-out before a request is fully complete. My plan was to give them the ability to split a job by creating a workflow that would automatically create a copy. Simple, right?</p>
 		<a href="img/sem-wf.png"><img class="hvr-grow" src="img/sem-wf.png"></img></a>
 		<p>Yeah... except it wasn't. The workflows, of which there are more than a few, wound up being rather straightfoward individually, but a common problem I ran into was how they stepped onto one another's toes all the time. Another was the how closely they were tied to the form and to the SharePoint list. All three of these combined to create a fragile network that was the SEM work sign-up system&#x2014;disturb one small detail and the whole thing was affected.</p>
-		<p>Another issue I encountered&#x2014;for months&#x2014;was with the request form. In the end, I was forced to put in about two dozen "rules," which were properties you could apply to form controls to change how they behave, based on defined conditions. This was an abnormally high number but became necessary in order for the form to function the way it was supposed to.</p>
+		<p>Another issue I encountered&#x2014;for months&#x2014;was with the request form. In the end, I was forced to put in about two dozen "rules," which were properties you could apply to form controls to change how they behave, based on defined conditions. This was a high number but became necessary in order for the form to function the way it was supposed to.</p>
 		<p>Overall this was a project that required me to assess an existing system and add complex enhancements to it, some of which were rendered difficult simply because of certain decisions the developer made originally. I learned the value of planning, testing, and documenting.</p>
 	  </div>
 	</section>
