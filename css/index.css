@@ -23,6 +23,7 @@ p {
 }
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
+  cursor: default;
 }
 a:link, a:visited {
   color: white;
