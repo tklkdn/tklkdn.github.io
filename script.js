@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	var lazyLoadInstance = new LazyLoad({
+	  // Your custom settings go here
+	});
+	
 	$(".bg-1").hide();
 	$(".bg-2").hide();
 	$(".bg-3").hide();
