@@ -1,6 +1,9 @@
+html, body {
+  height: 100%;
+}
 body {
   overflow: auto;
-  min-height: 700px;
+  /*min-height: 750px;*/
 }
 h1 {
   text-align: right;
@@ -13,8 +16,15 @@ h1 {
   padding-bottom: 20px;
   border-bottom: 5px double white;
 }
-p {
-  text-align: right;
+h3 {
+	text-align: left;
+	font-family: 'ADAM.CG PRO', sans-serif;
+	font-size: 2vw;
+	color: white;
+	padding-top: 20px;
+}
+p, .external {
+  text-align: justify;
   font-family: Lato, sans-serif;
   font-size: calc(12px + 1vw);
   color: white;
@@ -23,7 +33,6 @@ p {
 }
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
-  cursor: default;
 }
 a:link, a:visited {
   color: white;
@@ -31,8 +40,25 @@ a:link, a:visited {
 a:hover, a:active {
   color: #444;
 }
+a.external[target="_blank"]::after {
+  content: url('../img/out.png');
+  margin: 0px 10px;
+}
+#title {
+  color: black;
+  border-bottom: 5px double black;
+}
+.link {
+	color: white;
+	cursor: pointer;
+	user-select: none;
+}
 .header {
   width: 100%;
+}
+.bold {
+  font-weight: bold;
+  color: tomato;
 }
 .content {
   float: right;
@@ -40,9 +66,44 @@ a:hover, a:active {
   height: 100%;
   padding-right: 3%;
 }
-.sidenav {
-  top: 50px;
+#sidebar {
+  top: 0;
   left: 0;
+  width: 100px;
+  height: 100%;
+  position: absolute;
+  display: block;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#sidebar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+#home {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  display: block;
+  font-family: 'ADAM.CG PRO', sans-serif;
+  font-size: 0.66em;
+}
+#home a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  overflow: auto;
+  width: 100px;
+  height: 50px;
+  color: black;
+}
+.sidenav {
+  /*top: 50px;*/
+  width: 100px;
+  height: 750px;
   position: relative;
   display: block;
 }
@@ -54,11 +115,17 @@ a:hover, a:active {
   z-index: 1;
   overflow: auto;
   width: 100px;
-  height: 100px;
-}
-img {
+  height: 100px;	
+} 
+.icon {
   width: 40%;
   height: 40%;
+}
+.image {
+	width: 100%;
+	height: auto;
+	max-width: 1000px;
+	padding-top: 20px;
 }
 #link-1 {
   background-color: #000000;
@@ -81,24 +148,18 @@ img {
 #link-7 {
   background-color: #99866D;
 }
-.white-bkgd,
-.bg-1,
-.bg-2,
-.bg-3,
-.bg-4,
-.bg-5,
-.bg-6,
-.bg-7 {
+.main, .minor {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 0;
   width: 100%;
   height: 100%;
+	overflow-y: scroll;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.white-bkgd {
+.main {
   background-color: white;
 }
 .bg-1 {
