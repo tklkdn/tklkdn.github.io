@@ -26,6 +26,8 @@ $(document).ready(function(){
 		} else {
 			$("#home a").css("color", "white");
 		}
+    lazyLoadInstance.destroy();
+    lazyLoadInstance = new LazyLoad({});
 	}
 	
 	$("#link-0").click(function() {
