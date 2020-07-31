@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+   
+@font-face {
+	font-family: 'ADAM.CG PRO';
+	src: url("../fonts/ADAM.CG PRO.otf") format("opentype");
+}
+
 html, body {
   height: 100%;
+	font-size: 1em;
+	line-height: 1.4;
 }
 body {
   overflow: auto;
@@ -9,7 +18,7 @@ h1 {
   text-align: right;
   font-family: 'ADAM.CG PRO', sans-serif;
   text-transform: uppercase;
-  font-size: 8vw;
+  font-size: 7vw;
   color: white;
   margin-top: 15px;
   margin-bottom: -20px;
@@ -19,25 +28,27 @@ h1 {
 h3 {
 	text-align: left;
 	font-family: 'ADAM.CG PRO', sans-serif;
-	font-size: calc(16px + 1vw);
+	font-size: calc(14px + 1vw);
 	color: white;
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 }
 p, li, .external {
   text-align: justify;
-  font-family: Lato, sans-serif;
-  font-size: calc(12px + 1vw);
-  color: white;
+  font-family: 'Lato', sans-serif;
+  /*font-size: calc(12px + 1vw);*/
+	font-size: 1.2em;
+  color: #333;
   overflow: auto;
-  padding-top: 20px;
+  /*padding-top: 20px;*/
 }
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
+	color: #444;
 }
-a:link, a:visited {
+.link:link, .link:visited {
   color: white;
 }
-a:hover, a:active {
+.link:hover, .link:active {
   color: #444;
 }
 a.external[target="_blank"]::after {
@@ -58,7 +69,8 @@ a.external[target="_blank"]::after {
 }
 .content {
   float: right;
-  max-width: 75%;
+  /*max-width: 75%;*/
+	width: 85%;
   height: 100%;
   padding-right: 3%;
 }
@@ -122,6 +134,28 @@ a.external[target="_blank"]::after {
 	height: auto;
 	max-width: 1000px;
 	padding-top: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.card {
+	max-width: 800px;
+	padding: 5%;
+	background-color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+							0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+.green-text {
+	color: #63d668;
+}
+.brownie-text {
+	color: #9125c6;
 }
 #link-1 {
   background-color: #000000;
@@ -165,7 +199,9 @@ a.external[target="_blank"]::after {
   background-color: #00a9e0;
 }
 .bg-3 {
-  background-color: #63d668;
+  background: rgb(99,214,104);
+	background: linear-gradient(90deg, rgba(99,214,104,1) 0%, rgba(89,179,93,1) 100%, rgba(0,212,255,1) 100%);
+
 }
 .bg-4 {
   background-color: #9125c6;
@@ -178,49 +214,6 @@ a.external[target="_blank"]::after {
 }
 .bg-7 {
   background-color: #99866D;
-}
-
-/* Float Shadow */
-.hvr-float-shadow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-float-shadow:before {
-  pointer-events: none;
-  position: absolute;
-  z-index: -1;
-  content: '';
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 0;
-  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-  /* W3C */
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform, opacity;
-  transition-property: transform, opacity;
-}
-.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-  /* move the element up by 5px */
-}
-.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
-  opacity: 1;
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
-  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
 }
 
 .center {
@@ -245,6 +238,7 @@ a.external[target="_blank"]::after {
 	max-width: 100%; 
 	height: auto;
 	border-radius: 40px 10px 0px 0px;
+	box-shadow: -20px -16px #9125c6;
 }
 #left {
 	float: left;
@@ -289,11 +283,29 @@ table tr:nth-of-type(even) td {
   display: none;
 }
 
+@media only screen and (max-width: 1200px) {
+  .content {
+	  width: 75%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .content {
-	  max-width: 60%;
+	  width: 60%;
   }
-	p {
+	p, li, .external {
 		text-align: left;
+		font-size: 1rem;
 	}
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
