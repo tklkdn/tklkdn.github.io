@@ -36,8 +36,8 @@
 			<a class="link" id="link-2"><img class="icon" src="img/processor.png"></img></a>
 			<a class="link" id="link-3"><img class="icon" src="img/traffic-light.png"></img></a>
 			<a class="link" id="link-4"><img class="icon" src="img/house.png"></img></a>
-			<a class="link" id="link-5"><img class="icon" src="img/microphone.png"></img></a>
-			<a class="link" id="link-6"><img class="icon" src="img/charity.png"></img></a>
+			<a class="link" id="link-5"><img class="icon" src="img/website.png"></img></a>
+			<a class="link" id="link-6"><img class="icon" src="img/console.png"></img></a>
 			<a class="link" id="link-7"><img class="icon" src="img/other.png" style="width: 40%; height: auto;"></img></a>
 			<div class="container">
 				<div class="chevron"></div>
@@ -85,27 +85,50 @@
   <div class="minor bg-2">
     <div class="content">
       <h1>TOKYO ELECTRON</h1>
-      <p style="padding-top: 20px; color: white; font-size: calc(12px + 1vw);">Working as a Business Systems Analyst since December of 2016, I have provided SharePoint support, developed automated workflows, forms, and intranet sites, and managed the (re)build of complex business systems.</p>
+			<h3 style="text-align: right;">Business Systems Analyst</h3>
+			<div class="card">
+				<h3 class="blue-text">Responsibilities</h3>
+				<p>Working as a Business Systems Analyst since December of 2016, I have provided SharePoint support, training, and documentation; conducted interviews and offered solutions for business problems; built and maintained automated workflows and forms to support business processes; and developed and enhanced content, structure, architecture, and design for intranet sites.</p>
+			</div>
+			<div class="card">
+				<h3 class="blue-text">Quote Generation & Approval System Design</h3>
+				<p>This is one project I worked on, in conjunction with my Master's program capstone. The description of the project that follows serves as one example among the many other similar projects I have undertaken during my time here at Tokyo Electron and, hopefully, illustrates my role as an intermediary between the people and the technology for better facilitating the former's business needs.</p>
+				<h3 class="blue-text">Introduction</h3>
+				<p>Tokyo Electron is a company that manufactures semiconductor equipment. It has a major customer who request quotes on a regular basis, whether it is to procure new tools to modify any already-owned tools. The process of generating these quotes is specific to this customer and goes through a complicated set of procedures.</p>
+				<h3 class="blue-text">The Problem</h3>
+				<p>Once a quote request is placed it goes through a system in which the quote is created and then passed through several approval stages via automated notifications and approval tracking. Hosted on SharePoint, the system was built with InfoPath and SharePoint Designer. But Microsoft is dropping support for InfoPath in several years.</p>
+				<h3 class="blue-text">Another Problem</h3>
+				<p>This system is used exclusively by one business unit (BU 1). But another business unit (BU 2) has requested setting up its own automated system, similar to the one BU 1 is using. Currently, the quote requests BU 2 receives from the customer are created and approved manually, which makes tracking multiple quotes difficult.</p>
+				<h3 class="blue-text">Goals</h3>
+				<p>To produce a business solution that 1) allows BU 1 to continue generating quotes and gather approvals in an automated manner using new mathods and developer tools and 2) provides BU 2 with an automated system of its own. The new system should be <b>funtional</b>, <b>user-friendly</b>, and <b>maintainable</b>.</p>
+				<h3 class="blue-text">Interviewing</h3>
+				<p>Acting as the project manager and main developer, I gathered requirements from key stakeholders—individuals who create quotes as well as those who approve them. The system comprises of many parts—I needed to understand its various components and how they all worked together before proposing any solution.</p>
+				<h3 class="blue-text">Assessing</h3>
+				<p>I analyzed the available developer tools that could replace InfoPath and SharePoint Designer and offered four different options on how to build the system. Each option had its pros and cons, and I made my recommendation to the team and stakeholders, who subsequently selected one option out of the four.</p>
+				<h3 class="blue-text">Developing</h3>
+				<p>I began to develop the new system in a test environment using a combination of SharePoint Server, Microsoft Excel, and Nintex Workflow. The Excel files required macros, which in turn led me down the road of having to learn and implement basic VBA. Stakeholders provided feedback on a weekly basis through meetings, where I showed project progress by giving piecemeal demonstrations on what I had been able to build.</p>
+				<h3 class="blue-text">Testing</h3>
+				<p>Functional testing and usability testing took place to confirm the new system worked the way it was meant to, and to ensure users did not have troubles using it. The new system continued to be refined over the course of the next several months, after launching in a production environment.</p>
+				<h3 class="blue-text">Results</h3>
+				<p>I finished creating a quote generation and approval system for both BU 1 and BU 2. It operates as follows: The quote is created using an Excel file, the template of which is automatically generated via a Nintex workflow. A quote number is also auto-generated at the same time. After the quote is filled out and submitted for approval, a separate workflow reads the file and processes it for approval by sending it to the appropriate approvers in three sequential stages. After the quote receives all approvals it is published for customer review.</p>
+				<h3 class="blue-text">Challenges</h3>
+				<p>Rebuilding the system for BU 1 was relatively smooth but progress had been slower translating the manual quote process into an automated one for BU 2. Initial idea was to "copy" BU 1's new system for BU 2 but business processes and user history/expectations were different and had to be accounted for, in order to execute proper change management. System launch, training, and documentations were delayed but eventually completed.</p>
+			</div>
     </div>
   </div>
 	
   <div class="minor bg-3">
     <div class="content">
-			<h1>TRAFFIC TRACKER</h1>
-			<h3 style="text-align: right; padding-top: 20px;">Measuring Traffic with Google Apps API</h3>
-			<img data-src="img/gmap.png" class="lazy image" style="border-radius: 50%;"></img>
+			<h1>TRAFFIC SCORING</h1>
+			<h3 style="text-align: right;">Measuring Traffic with Google Apps API</h3>
 			<div class="card">
 				<h3 class="green-text">Problem statement</h3>
 				<p>Poor commute is a common experience in large cities. As drivers we want to understand the general flow of traffic, but traffic sensor data is inaccessible to the public. Is there a simple way to quantify, analyze, and discover traffic patterns by ourselves?</p>
-			</div>
-			<div class="card">
 				<h3 class="green-text">Idea #1: Google Maps</h3>
 				<p>Step 1: Open map of Austin in browser<br><br>Step 2: Take a screenshot at set intervals using auto screenshot capture + auto refresh applications<br><br>Step 3: Count the number of green, orange, red, and maroon pixels using Python script<br><br>Step 4: Generate traffic scores</p>
 				<p>But...</p>
 				<h3 class="green-text">Issues</h3>
 				<p>We cannot use PC while running setup. It is inefficient to save images and process them one by one. Inconsistencies become a common theme from trying to sync up all applications, and manual setup sometimes leads to human error.</p>
-			</div>
-			<div class="card">
 				<h3 class="green-text">Idea #2: Google Maps Distance Matrix API</h3>
 				<p>We can automatically collect travel time from various routes using the Distance Matrix API. After the script for it is written, setup is easy: Set timer, start script, let it run in the background, and data is written in csv file (instead of as large png files).<br><br> We collect data over a span of a few weeks, at which point we are then able to convert times into traffic severity scores and aggregate scores.</p>
 				<h3 class="green-text">Results</h3>
@@ -118,18 +141,12 @@
 				<div>
 					<img data-src="img/image3.png" class="lazy image"></img>
 				</div>
-			</div>
-			<div class="card">
 				<h3 class="green-text">Austin Traffic Score App</h3>
 				<p>We have created a simple web app to display general traffic patterns in Austin, divided by main regions. It uses Google Maps API + collected historical data to "predict" future traffic severity of a region.</p>
 				<p>Github: <a href="https://github.com/tklkdn/austin-traffic" target="_blank" class="external">Austin Traffic</a></p>
 				<img data-src="img/app.gif" class="lazy image"></img>
-			</div>
-			<div class="card">
 				<h3 class="green-text">Limitations</h3>
 				<p>Data needs to be validated with actual sensor data.<br><br>Route selection and region mapping bias.<br><br>Only two weeks' worth of data collected.</p>
-			</div>
-			<div class="card">
 				<h3 class="green-text">Conclusion</h3>
 				<p>There is potential for method to be used in future traffic studies. Google Maps API is inexpensive, accessible, and scalable. The information is also useful on personal level, informing user on traffic patterns within own commute</p>
 				<p>Academic paper: <a href="pdfs/PIFinalReport.pdf" target="_blank" class="external">PDF</a></p>
@@ -140,8 +157,7 @@
   <div class="minor bg-4">
     <div class="content">
 			<h1>BROWNIE</h1>
-			<h3 style="text-align: right; padding-top: 20px;">Automation for the Elderly</h3>
-			<img data-src="img/home.jpeg" class="lazy image" style="border-radius: 50%;"></img>
+			<h3 style="text-align: right; padding-top: 20px;">HOME AUTOMATION FOR THE ELDERLY</h3>
 			<p style="display: none;">Brownie is a concept for a smart home application for senior citizens. By surrounding them with an integrated system that monitors many of their household, health, and security needs, senior citizens who live on their own can be assured of greater independence in their own homes, thereby reducing their need for caretaker support.</p>
 			<div class="card">
 				<h3 class="brownie-text">Problem statement</h3>
@@ -151,8 +167,6 @@
 					<li>&bull; Be difficult to find</li>
 					<li>&bull; Deprive the elderly of a sense of independence</li>
 				</ul>
-			</div>
-			<div class="card">
 				<h3 class="brownie-text">Our idea</h3>
 				<p>We conceived a comprehensive smart home system catered for the elderly.</p>
 
@@ -166,12 +180,8 @@
 				</ul>
 				<h3 class="brownie-text">Design process</h3>
 				<img src="img/Brownie_Design_Process.png" class="lazy image"/>
-			</div>
-			<div class="card">
 				<h3 class="brownie-text">Competitor Analysis</h3>
 				<p>We cross-examined related companies and products:<br><br>HoneyCo | Samsung SmartThings | Crestron | Lively Activity Sensors<br><br>Our purpose was to identify their strengths and weaknesses and find areas for opportunity. HoneyCo came the closest to paralleling what we trying to accomplish but lacked user-friendliness and comprehensiveness.</p>
-			</div>
-			<div class="card">
 				<h3 class="brownie-text">Contextual Inquiry</h3>
 				<p>To design a smart home system that best served the needs of the older population, we had to understand the following:
 				<ul>
@@ -186,13 +196,9 @@
 				<p>We conducted an online survey for adults 35 and up. Respondents who were 55+ reported lower trust level for automation and lower comfort with technology. Most respondents valued privacy, security, safety, health monitoring.</p>
 				<h3 class="brownie-text">Opportunity</h3>
 				<p>Demand for automation services was low among elderly but could be ascribed to unfamiliarity with technology in general. Our aim was to to be able to <b>bridge</b> this gap by creating a user-friendly and useful solution for seniors.</p>
-			</div>
-			<div class="card">
 				<h3 class="brownie-text">Affinity Diagram</h3>
 				<img data-src="img/affinity.jpg" class="lazy image"/><br>
 				<p>Main points from interviews and surveys were collated, then sorted into categories: Automation, Reminder, Health, Contact, and Other.</p>
-			</div>
-			<div class="card">
 				<h3 class="brownie-text">Personas</h3>
 				<p>We created personas, who embodied the voice of our interview and survey participants, to help guide our design process.</p>
 				<div class="center">
@@ -214,8 +220,6 @@
 				<img data-src="img/storyboard1.jpg" class="lazy image"/>
 				<img data-src="img/storyboard2.jpg" class="lazy image"/>
 				<p style="clear: both;">Credit: Yueying Zhou</p>
-			</div>
-			<div class="card">
 				<h3 class="brownie-text">Ideation</h3>
 				<p>Using the ideas and concepts we gathered up to this point, we began to visualize them in the form of a mobile app.</p>
 				<ul>
@@ -237,16 +241,12 @@
 				<h3 class="brownie-text" style="clear: both;">Low fidelity prototype</h3>
 				<img data-src="img/lo-fi.png" class="lazy image"/>
 				<p>All of our prototypes were built with Sketch and InVision. The architecture of the app was based on categories from affinity diagram. Each category serves a specific function, including automating the home, monitoring health status, scheduling reminders, and allowing direct contact with family or emergency services.</p>
-			</div>
-			<div class="card">
 				<h3 class="brownie-text">User testing 1</h3>
 				<p>We conducted face-to-face usability tests with eight participants. We wrote a script consisting of five basic tasks. Unfortunately, lack of resources led to the recruitment of young participants for the first test round (all under 30). We were nonetheless able to gather plenty of useful feedback on the app.</p>
 				<h3 class="brownie-text">Modification 1</h3>
 				<p>Contact function was relegated in favor of a Help section due to it being redundant with a smartphone's native features and with social media apps. Wording was changed to enhance clarity. We narrowed the scope of the reminder system to medications and reduced number of navigatable screens. We also introduced color coding to distinguish normal from abnormal health status.</p>
 				<h3 class="brownie-text">High fidelity prototype</h3>
 				<img data-src="img/hi-fi-1.png" class="lazy image"/>
-			</div>
-			<div class="card">
 				<h3 class="brownie-text">User testing 2</h3>
 				<p>Usability tests were conducted with twelve remote participants from UserTesting.com. Unlike the first round of testing, participants were closer to our target user group, between the ages of 55 and 70.</p>
 				<img data-src="img/usertesting.PNG" class="lazy image"/>
@@ -293,8 +293,6 @@
 				</ul>
 				<h3 class="brownie-text">High fidelity prototype 2</h3>
 				<img data-src="img/hi-fi-app.PNG" class="lazy image" style="width: 50%;"/>
-			</div>
-			<div class="card">
 				<h3 class="brownie-text">Lessons Learned</h3>
 				<p><b>Thinking from the perspectives of senior citizens</b> meant designing an interface a little differently from how we otherwise might have designed it. For example, it was important to use bigger icons and bigger fonts than usual, to avoid the use of "hidden" screens, and to employ high contrasts to enable better readability.</p>
 			</div>
@@ -303,22 +301,66 @@
 	
   <div class="minor bg-5">
     <div class="content">
-      <h1>STORYUS</h1>
-			<p style="padding-top: 20px; color: white; font-size: calc(12px + 1vw);">StoryUs is a concept for families to share multimedia stories to other family members. Combining aspects of geneology, social media, and storytelling into one platform, the mobile app we designed allows users to tell their stories to, and listen to stories from, current family members, as well as to pass them down for generations to come.</p>
+      <h1>WEB DEV</h1>
+			<h3 style="text-align: right; padding-top: 20px;">Website and web app based projects</h3>
+			<p style="display: none; padding-top: 20px; color: white; font-size: calc(12px + 1vw);">StoryUs is a concept for families to share multimedia stories to other family members. Combining aspects of geneology, social media, and storytelling into one platform, the mobile app we designed allows users to tell their stories to, and listen to stories from, current family members, as well as to pass them down for generations to come.</p>
+			<div class="card">
+				<h3 class="orange-text">Personal Portfolio</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae dignissim ligula, in vestibulum massa. Pellentesque vulputate orci eget nunc tristique, nec laoreet augue viverra. Donec ut justo eu nisl ornare fringilla vel vel eros. Nulla aliquam sem at ipsum elementum laoreet. Morbi sapien purus, cursus at varius a, maximus a urna. Aliquam commodo purus aliquam, ultricies arcu non, molestie odio. Phasellus ullamcorper efficitur ligula, vitae scelerisque mi fermentum ut. Morbi dui ante, lacinia sit amet arcu in, mollis feugiat diam. Donec bibendum tellus non libero scelerisque cursus. Maecenas vel mauris suscipit, pulvinar ante at, ornare ipsum. Aenean eget ultrices lectus. Proin fermentum eros sed gravida accumsan.</p>
+			</div>
+			<div class="card">
+				<h3 class="orange-text">Operating System Sim</h3>
+				<p>Ut sit amet lacus commodo, scelerisque lorem id, congue risus. Vivamus faucibus dignissim tempor. Cras feugiat ipsum iaculis tempus mollis. Cras luctus quis nisi vitae porta. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce accumsan faucibus ultricies. Nunc dapibus in turpis in semper. Etiam erat turpis, elementum et dolor ullamcorper, gravida laoreet est.</p>
+			</div>
+			<div class="card">
+				<h3 class="orange-text">Movie Rating Database</h3>
+				<p>Aliquam mattis diam ut urna volutpat, nec euismod urna laoreet. Nunc nec consequat nisl. Maecenas ornare, urna a dictum dapibus, elit ante condimentum est, quis posuere enim lectus at quam. Phasellus dolor erat, laoreet non imperdiet accumsan, posuere nec orci. Nunc eros mi, elementum id quam ut, sagittis sollicitudin enim. Maecenas dapibus rhoncus metus. Pellentesque mollis metus sit amet mauris euismod, non maximus lectus lobortis. Sed rhoncus at justo et faucibus. In laoreet cursus justo id congue. Etiam dictum urna a mi euismod pulvinar. Donec auctor augue sit amet ex consectetur sagittis in in diam. Donec tempus vestibulum ex id scelerisque.</p>
+			</div>
+			<div class="card">
+				<h3 class="orange-text">Austin Traffic App</h3>
+				<p>Mauris condimentum turpis vitae interdum tristique. Proin convallis, libero et eleifend mollis, ipsum ex faucibus nibh, sed cursus odio augue quis nunc. Nullam arcu nisi, pulvinar sodales malesuada et, aliquam et dolor. Donec neque ligula, bibendum pellentesque interdum in, faucibus et turpis. Vestibulum lacinia ut ipsum vel cursus. Vestibulum consectetur posuere mi sit amet gravida. Sed eget eros urna. Aenean pretium dui at ex bibendum, tristique ornare est aliquam. Ut at fermentum augue. Phasellus lectus erat, viverra a ex at, iaculis finibus nulla. Cras at dolor sed orci pellentesque malesuada.</p>
+			</div>
     </div>
   </div>
 	
   <div class="minor bg-6">
     <div class="content">
-      <h1>THE REFUGE</h1>
-	  <p style="padding-top: 20px; color: white; font-size: calc(12px + 1vw);">A nonprofit organization depends on donations. And a website serves as its digital face–the more satisfying the experience, the more it can generate donations. With this in mind, I conducted a heuristic analysis and usability test for the Refuge to gauge UX metrics.</p>
+      <h1>SOFTWARE DEV</h1>
+			<h3 style="text-align: right; padding-top: 20px;">Programming projects</h3>
+			<div class="card">
+				<h3 class="red-text">Smallsh</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae dignissim ligula, in vestibulum massa. Pellentesque vulputate orci eget nunc tristique, nec laoreet augue viverra. Donec ut justo eu nisl ornare fringilla vel vel eros. Nulla aliquam sem at ipsum elementum laoreet. Morbi sapien purus, cursus at varius a, maximus a urna.</p>
+			</div>
+			<div class="card">
+				<h3 class="red-text">Bullet Dharma</h3>
+				<p>Bullet Dharma is a bullet hell game featuring a blue biplane the player controls to shoot down oncoming enemies. I used Python and the Pygame library to develop the game on my own, after about half a year into learning programming (and OOP) for the first time.</p>
+				<img data-src="img/bulletdharma.gif" class="lazy image" style="width: 40%; border: 1px solid #d64655;"/>
+				<p>The game becomes more difficult as it progresses, with the appearance of stronger enemies that shoot more bullets and require more shots to kill.</p>
+			  <img data-src="img/bd1.png" class="lazy image" style="width: 40%; border: 1px solid #d64655;" />
+				<p>The final boss has a health bar </p>
+				<img data-src="img/bd2.png" class="lazy image" style="width: 40%; border: 1px solid #d64655;" />
+				<p style="clear: both;">Github repo:</p> 
+			</div>
     </div>
   </div>
 	
   <div class="minor bg-7">
     <div class="content">
-	  <h1>OTHER WORKS</h1>
-	  <p style="visibility: hidden">What has been will be again, what has been done will be done again; there is nothing new under the sun. What has been will be again, what has been done will be done again; there is nothing new under the sun. What has been will be again, what has been done will be done again; there is nothing new under the sun.</p>
+			<h1>OTHER WORKS</h1>
+			<h3 style="text-align: right; padding-top: 20px;">Etc., Etc., Etc.</h3>
+			<div class="card">
+				<h3 class="brown-text">The Refuge Usability Testing</h3>
+				<p>A nonprofit organization depends on donations. And a website serves as its digital face–the more satisfying the experience, the more it can generate donations. With this in mind, I conducted a heuristic analysis and usability test for the Refuge to gauge UX metrics.</p>
+				<h3 class="brown-text">Project Kick-off</h3>
+				<p>Stakeholders for the Refuge stated an overview of the organization's missions, activities, priorities, and current status. They already had a website but wished to improve it. Their main goals were:</p>
+				<ul>
+					<li>&bull; To increase donations</li>
+					<li>&bull; To increase traffic</li>
+					<li>&bull; To increase awareness</li>
+				</ul>
+				<h3 class="brown-text">Heuristic Evaluation</h3>
+				<p>Overall design and layout are already decent. But what can be done to improve usability and fulfillment of organization's goals? I conducted an evaluation based on Nielsen's 10 usability heuristics.</p>
+			</div>
 		</div>
 		
   </div>
