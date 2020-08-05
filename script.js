@@ -16,18 +16,16 @@ $(document).ready(function(){
 	
 	function hideAllExcept(bg) {
 		$(bg).fadeIn(500);
-		for (var i of bgArr) {
+		Array.prototype.forEach.call(bgArr, function(i) {
 			if (bg != i) {
 				$(i).fadeOut(500);
 			}
-		}
+		})
 		if (bg == ".main") {
 			$("#home a").css("color", "black");
 		} else {
 			$("#home a").css("color", "white");
 		}
-    lazyLoadInstance.destroy();
-    lazyLoadInstance = new LazyLoad({});
 	}
 	
 	$("#link-0").click(function() {
