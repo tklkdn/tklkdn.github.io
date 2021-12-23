@@ -210,6 +210,10 @@ a.external[target="_blank"]::after {
   background-color: #99866D;
 }
 
+.bg-1, .bg-2, .bg-3, .bg-4, .bg-5, .bg-6, .bg-7, .container {
+	display: none;
+}
+
 .center {
 	margin: auto;
 	width: 66%;
