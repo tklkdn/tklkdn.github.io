@@ -31,6 +31,11 @@ $(document).ready(function(){
 	}
 
 	refreshData();
+	
+	let contents = document.getElementsByClassName("content")
+	for (c of contents) {
+		c.style.display = "none"
+	}
 });
 
 function isScrolledIntoView(elem)
